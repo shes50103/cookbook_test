@@ -3,4 +3,5 @@ source "https://supermarket.chef.io"
 cookbook "sysctl"
 cookbook "build-essential"
 cookbook "monit"
-cookbook 'papertrail-rsyslog', '~> 1.2.0'
+cookbook "sidekiq", git: "git@github.com:brainyatom/opsworks-sidekiq.git"
+# cookbook 'papertrail-rsyslog', '~> 1.2.0'
