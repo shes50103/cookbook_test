@@ -2,7 +2,7 @@ DEPENDENCIES
   build-essential
   monit
   sidekiq
-    git: git@github.com:brainyatom/opsworks-sidekiq.git
+    git: https://github.com/brainyatom/opsworks-sidekiq.git
     revision: 3670a32f725b14500d964d1034220ddc24372b58
   sysctl
 
