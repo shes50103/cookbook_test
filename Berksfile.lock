@@ -4,6 +4,9 @@ DEPENDENCIES
   sidekiq
     git: https://github.com/brainyatom/opsworks-sidekiq.git
     revision: 3670a32f725b14500d964d1034220ddc24372b58
+  swap-simple
+    git: https://github.com/christopher5106/swap-simple.git
+    revision: 9575fb7c311c801286404a8fdbeb98b146698a7f
   sysctl
 
 GRAPH
@@ -36,6 +39,7 @@ GRAPH
   seven_zip (2.0.1)
     windows (>= 1.2.2)
   sidekiq (1.0.0)
+  swap-simple (0.1.0)
   sysctl (0.8.0)
     ohai (~> 4.0)
   windows (1.44.1)
