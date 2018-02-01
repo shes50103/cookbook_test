@@ -1,6 +1,7 @@
 DEPENDENCIES
   build-essential
   monit
+  papertrail (~> 1.1.1)
   sidekiq
     git: https://github.com/brainyatom/opsworks-sidekiq.git
     revision: 3670a32f725b14500d964d1034220ddc24372b58
@@ -10,6 +11,7 @@ DEPENDENCIES
   sysctl
 
 GRAPH
+  apt (6.1.4)
   build-essential (6.0.4)
     compat_resource (>= 12.10)
     mingw (>= 1.1)
@@ -23,6 +25,10 @@ GRAPH
     poise-monit (~> 1.0)
   ohai (4.1.1)
     compat_resource (>= 12.10)
+  papertrail (1.1.1)
+    apt (>= 0.0.0)
+    yum (>= 0.0.0)
+    yum-epel (>= 0.0.0)
   poise (2.7.1)
   poise-archive (1.2.0)
     poise (~> 2.6)
@@ -42,3 +48,6 @@ GRAPH
   sysctl (0.8.0)
     ohai (~> 4.0)
   windows (2.0.2)
+  yum (5.1.0)
+  yum-epel (1.0.2)
+    yum (>= 3.6)
