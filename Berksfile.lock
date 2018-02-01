@@ -1,7 +1,7 @@
 DEPENDENCIES
+  apt
   build-essential
   monit
-  papertrail (~> 1.1.1)
   sidekiq
     git: https://github.com/brainyatom/opsworks-sidekiq.git
     revision: 3670a32f725b14500d964d1034220ddc24372b58
@@ -9,6 +9,8 @@ DEPENDENCIES
     git: https://github.com/christopher5106/swap-simple.git
     revision: 9575fb7c311c801286404a8fdbeb98b146698a7f
   sysctl
+  yum
+  yum-epel
 
 GRAPH
   apt (6.1.4)
@@ -25,10 +27,6 @@ GRAPH
     poise-monit (~> 1.0)
   ohai (4.1.1)
     compat_resource (>= 12.10)
-  papertrail (1.1.1)
-    apt (>= 0.0.0)
-    yum (>= 0.0.0)
-    yum-epel (>= 0.0.0)
   poise (2.7.1)
   poise-archive (1.2.0)
     poise (~> 2.6)
