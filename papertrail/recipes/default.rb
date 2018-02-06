@@ -1,6 +1,6 @@
 case node['platform']
 when 'debian', 'ubuntu'
-  full_pkg_name = "remote-syslog2_0.19_amd64.deb"
+  full_pkg_name = "remote-syslog2_0.20_amd64.deb"
   pkg_name = 'remote-syslog2'
 else
   raise "Unsupported platform: #{node['platform']}"
