@@ -1,3 +1,11 @@
+#
+# set default options for ChefGem and thus fix installation procedure to use the
+# Chef::Provider::Package::Rubygems#install and Chef::Provider::Package::Rubygems#uninstall
+# methods
+
+require 'chef/resource/package'
+require 'chef/resource/gem_package'
+
 class Chef
   class Resource
     class ChefGem < Chef::Resource::Package::GemPackage
