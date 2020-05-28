@@ -1,13 +1,13 @@
 if node[:opsworks_bundler][:manage_package]
-  puts "hi #{method(:gem_package).source_location}"
-  Chef::Log.info("log #{method(:gem_package).source_location}")
+  puts "hi "
+  Chef::Log.info("log ")
 
   gem_package "Installing Bundler #{node[:opsworks_bundler][:version]}" do
     gem_binary node[:dependencies][:gem_binary]
     retries 2
     package_name "bundler"
     action :install
-    options "-no-ri -no-rdoc"
+    options ""
     version node[:opsworks_bundler][:version]
     if Gem::Version.new(node[:opsworks_rubygems][:version]) > Gem::Version.new("2.6.14")
       options "--force"
