@@ -2,7 +2,7 @@ if node[:opsworks_bundler][:manage_package]
   puts "hi "
   Chef::Log.info("log ")
 
-  gem_package "Installing Bundler #{node[:opsworks_bundler][:version]}" do
+  gem_package "Installing Bundler hihi #{node[:opsworks_bundler][:version]}" do
     gem_binary node[:dependencies][:gem_binary]
     retries 2
     package_name "bundler"
