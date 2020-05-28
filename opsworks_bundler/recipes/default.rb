@@ -1,4 +1,7 @@
 if node[:opsworks_bundler][:manage_package]
+  puts "hi #{method(:gem_package).source_location}"
+  Chef::Log.info("log #{method(:gem_package).source_location}")
+
   gem_package "Installing Bundler #{node[:opsworks_bundler][:version]}" do
     gem_binary node[:dependencies][:gem_binary]
     retries 2
