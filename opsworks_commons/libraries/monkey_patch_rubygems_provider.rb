@@ -90,7 +90,7 @@ class Chef
         end
 
         def install_via_gem_command(name, version)
-          puts 'gogogogogo123 new2'
+          puts 'gogogogogo123 new3'
 
           if @new_resource.source =~ /\.gem$/i
             name = @new_resource.source
@@ -98,9 +98,9 @@ class Chef
             src = @new_resource.source && "  --source=#{@new_resource.source} --source=http://rubygems.org"
           end
           if version
-            shell_out!("#{gem_binary_path} install #{name} -q --no-rdoc --no-ri -v \"#{version}\"#{src}#{opts}", :env=>nil)
+            shell_out!("#{gem_binary_path} install #{name} -q -no-rdoc -no-ri -v \"#{version}\"#{src}#{opts}", :env=>nil)
           else
-            shell_out!("#{gem_binary_path} install \"#{name}\" -q --no-rdoc --no-ri #{src}#{opts}", :env=>nil)
+            shell_out!("#{gem_binary_path} install \"#{name}\" -q -no-rdoc -no-ri #{src}#{opts}", :env=>nil)
           end
         end
 
