@@ -85,6 +85,8 @@ class Chef
           puts 'gogogogogo'
 
           def install_via_gem_command(name, version)
+            puts 'gogogogogo123'
+
             src = []
             if new_resource.source.is_a?(String) && new_resource.source =~ /\.gem$/i
               name = new_resource.source
